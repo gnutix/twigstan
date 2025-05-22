@@ -8,12 +8,12 @@ use Nette\Neon\Neon;
 use PhpParser\Node;
 use ReflectionClass;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Filesystem\Path;
 use Symfony\Component\Process\Process;
 use TwigStan\PHPStan\Analysis\AnalysisResultFromJsonReader;
 use TwigStan\PHPStan\Analysis\PHPStanAnalysisResult;
 use TwigStan\PHPStan\Collector\TemplateContextCollector;
+use TwigStan\Symfony\Filesystem;
 
 final readonly class PHPStanRunner
 {

@@ -9,7 +9,6 @@ use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitor;
 use PhpParser\NodeVisitor\NameResolver;
 use RuntimeException;
-use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Filesystem\Path;
 use Twig\Environment;
 use Twig\Node\ModuleNode;
@@ -28,6 +27,7 @@ use TwigStan\Processing\Compilation\PhpVisitor\RemoveImportsVisitor;
 use TwigStan\Processing\Compilation\PhpVisitor\RemoveLineNumberFromGetAttributeCallVisitor;
 use TwigStan\Processing\TemplateContext;
 use TwigStan\Processing\TemplateContextToArrayShape;
+use TwigStan\Symfony\Filesystem;
 
 final readonly class TwigCompiler
 {

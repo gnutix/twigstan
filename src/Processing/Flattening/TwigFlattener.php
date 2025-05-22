@@ -6,7 +6,6 @@ namespace TwigStan\Processing\Flattening;
 
 use PhpParser\NodeTraverser;
 use RuntimeException;
-use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Filesystem\Path;
 use TwigStan\PHP\PrettyPrinter;
 use TwigStan\PHP\StrictPhpParser;
@@ -15,6 +14,7 @@ use TwigStan\Processing\Flattening\PhpVisitor\BlockMethodFindingVisitor;
 use TwigStan\Processing\Flattening\PhpVisitor\InjectBlockMethodsFromParentVisitor;
 use TwigStan\Processing\Flattening\PhpVisitor\InlineParentTemplateVisitor;
 use TwigStan\Processing\Flattening\PhpVisitor\MainMethodFinderVisitor;
+use TwigStan\Symfony\Filesystem;
 use TwigStan\Twig\Metadata\MetadataRegistry;
 use TwigStan\Twig\SourceLocation;
 
